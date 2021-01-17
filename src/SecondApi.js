@@ -1,7 +1,4 @@
 import {useEffect, useState} from "react";
-import Pokedex from './Pokedex'
-import PokemonPicture from './PokemonPicture';
-import PokemonInput from './PokemonNameInput';
 
 function SecondApi() {
 
@@ -23,29 +20,8 @@ function SecondApi() {
 
     return (
         <div>
-            <h1 className="mb-4">Placeholder</h1>
-            <div className="d-flex row col-md-10 mx-auto align-items-center text-center">
-                {photos.map(photo => (
-                    <div className="d-flex col-md-3">
-                        <span className="">
-                            <img className="img-fluid img-thumbnail" href={photo.url} src={photo.thumbnailUrl} />
-                            <p>{photo.title}</p>
-                        </span>
-                    </div>                    
-                ))}
-            </div>
-            
         </div>
     );
-    */
-   return (
-    <div className="">
-        <Pokedex>
-          <PokemonPicture />
-          <PokemonInput />
-        </Pokedex>
-    </div>
-  );
 }
 
 export default SecondApi;
